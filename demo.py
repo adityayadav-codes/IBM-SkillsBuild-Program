@@ -10,7 +10,6 @@
 #input -> data given to the program by the user
 #output data -> data given by the program to the user
 # from os import sep
-from shutil import copy
 
 
 # a=int(input("Enter a number: "))
@@ -42,15 +41,21 @@ from shutil import copy
 # print(a)  # [[1, 2], [3, 4]]
 # print(b)  # [[1, 2], [99, 4]]
 
+# # shallow copy
+# original = [[1, 2, 3], [4]]
+# copy.list = original.copy()
+# copy.list[1] = "Aditya "
+# copy.list.append("Anil")
+# copy.list[0][0] = 99
+# print("Original:", original)    
+# print("Copy:", copy.list)
+
 # deep copy
-original = [[1, 2, 3], [4]]
-copy.list = original.copy()
-copy.list[1] = "Aditya "
-copy.list.append("Anil")
-print("Original:", original)    
-print("Copy:", copy.list)
-# shallow copy
-
-
+import copy
+original = [1, 2, 3, 4, 5]
+copy.list = copy.deepcopy(original)
+copy.list[1]= 101
+print("original", original)
+print("deep copy", copy.list)
 
 
