@@ -20,7 +20,24 @@ from os import sep
 # b = str(a)
 # print()
 # print(type(b))
-print("hello", "world", sep=" ", end = "!")
+# print("hello", "world", sep=" ", end = "!")
+# in copy we create as new object instead of sharing memory
+# x = [10]
+# y = x
+# y.append(4)
+# print(x)
+# print(y)
+# x = 10
+# y = 20
+# print(x)
+# print(y)
 
+import copy
 
+a = [[1, 2], [3, 4]]
+b = copy.copy(a)
+
+b[1][0] = 99
+print(a)  # [[1, 2], [3, 4]]
+print(b)  # [[1, 2], [99, 4]]
 
