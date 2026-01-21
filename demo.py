@@ -88,7 +88,7 @@
 # print(np.zeros((3)))
 # print(np.ones((3)))
 # print(np.arange(1, 11, 3))
-import numpy as np
+# import numpy as np
 #a =  np.array([[1, 2, 3, 4, 5], [2,4,6,8,10]])
 #print(a)
 #print(a.dtype)
@@ -112,7 +112,7 @@ import numpy as np
 # print(np.concatenate((a,b)))
 # print(np.vstack((a,b)))
 # print(np.hstack((a,b)))
-arr=np.array([10,20,30,40])
+# arr=np.array([10,20,30,40])
 # np.split(arr,2)
 # print(arr)
 # print(np.where(arr==10))
@@ -126,13 +126,54 @@ arr=np.array([10,20,30,40])
 # np.sort(arr)
 # print(np.sort(arr))
 #filtering
-arr>20
-print(arr>20)
-arr[arr>20]
-print(arr[arr>20])
-#broadcasting
-arr+10
-print(arr+10)
-#Matrix Broadcasting
-matrix=np.array([[10,30,40],[20,10,10]])
-matrix+np.array([10,10,20])
+# arr>20
+# print(arr>20)
+# arr[arr>20]
+# print(arr[arr>20])
+# #broadcasting
+# arr+10
+# print(arr+10)
+# #Matrix Broadcasting
+# matrix=np.array([[10,30,40],[20,10,10]])
+# matrix+np.array([10,10,20])
+
+#  Pandas -> library used for data analysis and manipulation in python
+import pandas as pd
+# s = pd.Series([10, 20, 30, 40, 50])
+# print(s)
+s = pd.Series([10, 20, 30, 40, 50], index=['a', 'b', 'c', 'd', 'e'])
+print(s)
+s.name="Column name"
+s.index.name="Index name"
+print(s)
+k=pd.DataFrame(s)
+print(k)
+data={'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+      'Age': [25, 30, 35, 40],
+      'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']}
+df = pd.DataFrame(data)
+# print(df)
+# print(df['Name'])
+# print(df[['Name', 'Age']])
+# print(df.iloc[0])
+# print(df.iloc[1:3])
+# print(df[df['Age'] > 30])
+# df['Age'] = df['Age'] + 1
+# print(df)
+# df['Country'] = 'USA'
+# print(df)  
+# df.dtypes
+# print(df.dtypes)
+# df.shape
+# print(df.shape)
+# df.columns
+# print(df.columns)
+# df[["Name","City"]]
+# print(df[["Name","City"]])
+iloc=df.iloc[2]
+print(iloc)
+loc=df.loc[2, ["Name", "Age"]]
+print(loc)
+age=df[df['Age']>30]
+print(age)
+pd.read_excel("Raw_data.xlsx")
