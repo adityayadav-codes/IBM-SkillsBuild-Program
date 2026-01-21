@@ -81,3 +81,11 @@ copy.list = copy.deepcopy(original)
 copy.list[1][1]= 99
 print("Original:", original)
 print("copy: ", copy.list)
+
+#  numpy -> numerical python:- library used for numerical computations in python
+import numpy as np
+a = np.array([1, 2, 3, 4, 5])
+print(np.zeros((3)))
+print(np.ones((3)))
+print(np.arange(1, 11, 3))
+
