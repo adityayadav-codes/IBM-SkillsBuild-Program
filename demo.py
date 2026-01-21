@@ -97,10 +97,39 @@ import numpy as np
 #print(a.ndim)
 #print(a.transpose())
 #print(a.nbytes)
-arr=np.array([1,2,3,4,5,6])
-arr2=arr.reshape(2,3)
+# arr=np.array([1,2,3,4,5,6])
+# arr2=arr.reshape(2,3)
 #convert 1D array to 2D array
-arr3=arr.reshape(1,2,3)
-print(arr2)
-print(arr3)
-print(arr3.shape)
+#arr3=arr.reshape(1,2,3)
+# print(arr2)
+# print(arr3)
+# print(arr3.shape)
+# a=np.array([1,2,3])
+# b=np.array([4,5,6])
+# np.concatenate((a,b))
+# np.vstack((a,b))
+# np.hstack((a,b))
+# print(np.concatenate((a,b)))
+# print(np.vstack((a,b)))
+# print(np.hstack((a,b)))
+arr=np.array([10,20,30,40])
+# np.split(arr,2)
+# print(arr)
+# print(np.where(arr==10))
+# print(np.split(arr,2))
+#search
+# np.where(arr==30)
+# np.where(arr>>30)
+# print(np.split(arr==2))
+# print(np.where(arr>>30))
+#sorting
+# np.sort(arr)
+# print(np.sort(arr))
+#filtering
+arr>20
+print(arr>20)
+arr[arr>20]
+print(arr[arr>20])
+#broadcasting
+arr+10
+print(arr+10)
