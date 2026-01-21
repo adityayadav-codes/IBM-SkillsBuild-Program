@@ -75,17 +75,32 @@
 # print("Shallow copy: " , copy.list)
 
 # deep copy practice
-import copy
-original = [[1, 2, 3], [4, 5, 6]]
-copy.list = copy.deepcopy(original)
-copy.list[1][1]= 99
-print("Original:", original)
-print("copy: ", copy.list)
+# import copy
+# original = [[1, 2, 3], [4, 5, 6]]
+# copy.list = copy.deepcopy(original)
+# copy.list[1][1]= 99
+# print("Original:", original)
+# print("copy: ", copy.list)
 
 #  numpy -> numerical python:- library used for numerical computations in python
+# import numpy as np
+# a = np.array([1, 2, 3, 4, 5])
+# print(np.zeros((3)))
+# print(np.ones((3)))
+# print(np.arange(1, 11, 3))
 import numpy as np
-a = np.array([1, 2, 3, 4, 5])
-print(np.zeros((3)))
-print(np.ones((3)))
-print(np.arange(1, 11, 3))
-
+#a =  np.array([[1, 2, 3, 4, 5], [2,4,6,8,10]])
+#print(a)
+#print(a.dtype)
+#print(a.shape)
+#print(a.size)
+#print(a.ndim)
+#print(a.transpose())
+#print(a.nbytes)
+arr=np.array([1,2,3,4,5,6])
+arr2=arr.reshape(2,3)
+#convert 1D array to 2D array
+arr3=arr.reshape(1,2,3)
+print(arr2)
+print(arr3)
+print(arr3.shape)
