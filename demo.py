@@ -51,11 +51,33 @@
 # print("Copy:", copy.list)
 
 # deep copy
+# import copy
+# original = [1, 2, 3, 4, 5]
+# copy.list = copy.deepcopy(original)
+# copy.list[1]= 101
+# print("original", original)
+# print("deep copy", copy.list)
+
+
+# # shallow copy practice
+# import copy
+# original = [[1, 2, 3], [4, 5, 6]]
+# copy.list = copy.copy(original)
+# copy.list[1][1]= 99
+# print("Original:", original)
+# print("copy: ", copy.list)
+
+# import copy
+# original = [[1,2,3,4], [5,6,7]]
+# copy.list = copy.copy(original)
+# copy.list[0][0] = 99
+# print("Original : ", original)
+# print("Shallow copy: " , copy.list)
+
+# deep copy practice
 import copy
-original = [1, 2, 3, 4, 5]
+original = [[1, 2, 3], [4, 5, 6]]
 copy.list = copy.deepcopy(original)
-copy.list[1]= 101
-print("original", original)
-print("deep copy", copy.list)
-
-
+copy.list[1][1]= 99
+print("Original:", original)
+print("copy: ", copy.list)
