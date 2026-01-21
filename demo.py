@@ -133,3 +133,6 @@ print(arr[arr>20])
 #broadcasting
 arr+10
 print(arr+10)
+#Matrix Broadcasting
+matrix=np.array([[10,30,40],[20,10,10]])
+matrix+np.array([10,10,20])
