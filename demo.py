@@ -224,8 +224,17 @@
 # df
 
 # if you want see total rows
-import pandas as pd
-pd.set_option('display.max_rows', None)
-df = pd.read_csv(r"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
-df
+# import pandas as pd
+# pd.set_option('display.max_rows', None)
+# df = pd.read_csv(r"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
+# df
 
+# ======Bar Chart==========
+import matplotlib.pyplot as plt
+plt.figure(figsize=(5,5))
+plt.bar(revenue_day.index,revenue_day.values,color =["red","green","yellow","cyan"])
+plt.title("total unit sold per month ")
+plt.xlabel(" Month Number")
+plt.ylabel("unit sold")
+# plt.grid(True)
+plt.show()
