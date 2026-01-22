@@ -289,3 +289,11 @@ plt.title("Total bill by Gender")
 plt.xlabel("Days")
 plt.ylabel("unit")
 plt.show()
+
+# days
+import matplotlib.pyplot as plt
+revenue_day.plot(kind="hist",color=["green","orange","yellow"])
+plt.title("Total bill by day")
+plt.xlabel("Days")
+plt.ylabel("unit")
+plt.show()
