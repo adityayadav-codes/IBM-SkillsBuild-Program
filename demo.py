@@ -195,10 +195,17 @@
 # plt.ylabel("unit sold")
 # plt.grid(True
 
-plt.figure(figsize=(10,5))
-plt.plot(monthly_profit.index,monthly_profit.values,marker="o",color="red")
-plt.title("total unit sold per month ")
-plt.xlabel(" Month Number")
-plt.ylabel("unit sold")
-plt.grid(True)
-plt.show()
+# plt.figure(figsize=(10,5))
+# plt.plot(monthly_profit.index,monthly_profit.values,marker="o",color="red")
+# plt.title("total unit sold per month ")
+# plt.xlabel(" Month Number")
+# plt.ylabel("unit sold")
+# plt.grid(True)
+# plt.show()
+
+
+
+# immport new file
+import pandas as pd
+df = pd.read_csv(r"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
+df.head()
