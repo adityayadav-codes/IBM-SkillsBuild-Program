@@ -184,6 +184,13 @@
 
 
 # trade graph
-# import pandas as pd
-df = pd.read_csv(r"https://gist.githubusercontent.com/fishtai0/c243e57e3d80358b3d081406870c89a8/raw/company-sales.csv")
-df 
+# # import pandas as pd
+# df = pd.read_csv(r"https://gist.githubusercontent.com/fishtai0/c243e57e3d80358b3d081406870c89a8/raw/company-sales.csv")
+# df 
+
+# plt.figure(figsize=(10,5))
+# plt.plot(monthly_unit.index,monthly_unit.values,marker="*",color="red")
+# plt.title("total unit sold per month ")
+# plt.xlabel(" Month Number")
+# plt.ylabel("unit sold")
+# plt.grid(True
