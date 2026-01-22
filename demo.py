@@ -297,3 +297,10 @@ plt.title("Total bill by day")
 plt.xlabel("Days")
 plt.ylabel("unit")
 plt.show()
+# time
+import matplotlib.pyplot as plt
+revenue_time.plot(kind="hist",color=["yellow"])
+plt.title("Total bill by time")
+plt.xlabel("Days")
+plt.ylabel("unit")
+plt.show()
