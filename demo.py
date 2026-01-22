@@ -248,3 +248,12 @@ plt.xlabel("Time")
 plt.ylabel("unit")
 # plt.grid(True)
 plt.show()
+# Gender
+import matplotlib.pyplot as plt
+plt.figure(figsize=(5,5))
+plt.bar(revenue_gender.index,revenue_gender.values,color=["red","cyan"])
+plt.title("total bill by Gender ")
+plt.xlabel(" Male/Female")
+plt.ylabel("unit ")
+# plt.grid(True)
+plt.show()
