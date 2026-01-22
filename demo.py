@@ -230,11 +230,21 @@
 # df
 
 # ======Bar Chart==========
+# days
 import matplotlib.pyplot as plt
 plt.figure(figsize=(5,5))
 plt.bar(revenue_day.index,revenue_day.values,color =["red","green","yellow","cyan"])
 plt.title("total unit sold per month ")
 plt.xlabel(" Month Number")
 plt.ylabel("unit sold")
+# plt.grid(True)
+plt.show()
+# time
+import matplotlib.pyplot as plt
+plt.figure(figsize=(5,5))
+plt.bar(revenue_time.index,revenue_time.values,color=["red","yellow"])
+plt.title("Total revenue by day")
+plt.xlabel("Time")
+plt.ylabel("unit")
 # plt.grid(True)
 plt.show()
