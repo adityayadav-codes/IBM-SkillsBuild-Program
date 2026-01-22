@@ -280,3 +280,12 @@ plt.title("Total bill by day")
 plt.xlabel("Days")
 plt.ylabel("unit")
 plt.show()
+
+# ===========Histo-Gram==========
+# Gender
+import matplotlib.pyplot as plt
+revenue_gender.plot(kind="hist",color=["red","green","orange","yellow"])
+plt.title("Total bill by Gender")
+plt.xlabel("Days")
+plt.ylabel("unit")
+plt.show()
