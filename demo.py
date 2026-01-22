@@ -206,6 +206,11 @@
 
 
 # immport new file
+# import pandas as pd
+# df = pd.read_csv(r"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
+# df.head()
+
 import pandas as pd
-df = pd.read_csv(r"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
-df.head()
+df = pd.read_csv(r"/content/drive/MyDrive/tips.csv")
+# df.info()
+df.drop_duplicates()
