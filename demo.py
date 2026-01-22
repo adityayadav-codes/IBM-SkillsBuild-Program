@@ -215,7 +215,17 @@
 # # df.info()
 # df.drop_duplicates()
 
-numeric_col = ['total_bill', 'tip','size']
-for col in numeric_col:
-  df[col] = pd.to_numeric(df[col], errors='coerce')
+# import pandas as pd
+# df = pd.read_csv(r"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
+# # df.info()
+# numeric_col = ['total_bill', 'tip','size']
+# for col in numeric_col:
+#   df[col] = pd.to_numeric(df[col], errors='coerce')
+# df
+
+# if you want see total rows
+import pandas as pd
+pd.set_option('display.max_rows', None)
+df = pd.read_csv(r"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
 df
+
