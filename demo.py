@@ -257,3 +257,12 @@ plt.xlabel(" Male/Female")
 plt.ylabel("unit ")
 # plt.grid(True)
 plt.show()
+
+# =======Pie Chart=======
+# Days
+import matplotlib.pyplot as plt
+revenue_day.plot(kind="pie",color=["red","green","orange","yellow"])
+plt.title("Total bill by day")
+plt.xlabel("Days")
+plt.ylabel("unit")
+plt.show()
