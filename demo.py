@@ -210,7 +210,12 @@
 # df = pd.read_csv(r"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
 # df.head()
 
-import pandas as pd
-df = pd.read_csv(r"/content/drive/MyDrive/tips.csv")
-# df.info()
-df.drop_duplicates()
+# import pandas as pd
+# df = pd.read_csv(r"/content/drive/MyDrive/tips.csv")
+# # df.info()
+# df.drop_duplicates()
+
+numeric_col = ['total_bill', 'tip','size']
+for col in numeric_col:
+  df[col] = pd.to_numeric(df[col], errors='coerce')
+df
