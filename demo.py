@@ -138,20 +138,20 @@
 # matrix+np.array([10,10,20])
 
 #  Pandas -> library used for data analysis and manipulation in python
-import pandas as pd
+# import pandas as pd
 # s = pd.Series([10, 20, 30, 40, 50])
 # print(s)
-s = pd.Series([10, 20, 30, 40, 50], index=['a', 'b', 'c', 'd', 'e'])
-print(s)
-s.name="Column name"
-s.index.name="Index name"
-print(s)
-k=pd.DataFrame(s)
-print(k)
-data={'Name': ['Alice', 'Bob', 'Charlie', 'David'],
-      'Age': [25, 30, 35, 40],
-      'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']}
-df = pd.DataFrame(data)
+# s = pd.Series([10, 20, 30, 40, 50], index=['a', 'b', 'c', 'd', 'e'])
+# print(s)
+# s.name="Column name"
+# s.index.name="Index name"
+# print(s)
+# k=pd.DataFrame(s)
+# print(k)
+# data={'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+#       'Age': [25, 30, 35, 40],
+#       'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']}
+# df = pd.DataFrame(data)
 
 # print(df)
 # print(df['Name'])
@@ -171,10 +171,13 @@ df = pd.DataFrame(data)
 # print(df.columns)
 # df[["Name","City"]]
 # print(df[["Name","City"]])
-iloc=df.iloc[2]
-print(iloc)
-loc=df.loc[2, ["Name", "Age"]]
-print(loc)
-age=df[df['Age']>30]
-print(age)
-pd.read_excel("Raw_data.xlsx")
+# iloc=df.iloc[2]
+# print(iloc)
+# loc=df.loc[2, ["Name", "Age"]]
+# print(loc)
+# age=df[df['Age']>30]
+# print(age)
+# # pd.read_excel("Raw_data.xlsx")
+# import pandas as pd
+# df = pd.read_csv(r"https://gist.githubusercontent.com/fishtai0/c243e57e3d80358b3d081406870c89a8/raw/company-sales.csv")
+# print(df)
